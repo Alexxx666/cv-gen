@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>CV Generator</title>
+    
+	<link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <main>
+        <select name="position" id="positionSelect" data-testId="positionSelect">
+			<option value="">--Please choose your position--</option>
+			<option value="frontEnd">Front-End Developer</option>
+			<option value="backEnd">Back-End Developer</option>
+			<option value="QA">QA</option>
+			<option value="devOps">DevOps</option>
+		</select>
+		
+		<select name="level" id="levelSelect" data-testId="levelSelect">
+			<option value="">--Please choose your level--</option>
+			<option value="junior">Junior</option>
+			<option value="middle">Middle</option>
+			<option value="senior">Senior</option>
+			<option value="lead">Lead</option>
+		</select>
+		
+		<button type="button" id="generateButton">
+			Get Your Content
+		</button>
+		
+		<p id="generatedContent">Nothing has been generated yet</p>
+	</main>    
+    <script src="js/script.js"></script>
+</body>
+
+</html>
