@@ -1,1 +1,1 @@
-# cv-gen
+# A project for learning QA Automation
