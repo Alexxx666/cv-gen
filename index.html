@@ -14,34 +14,38 @@
 
 <body>
     <main>
-		<div class="select">
-			<label for="positionSelect">Your position</label>
-			<select name="position" id="positionSelect" data-testId="positionSelect">
-				<option value="">--Please choose your position--</option>
-				<option value="frontEnd">Front-End Developer</option>
-				<option value="backEnd">Back-End Developer</option>
-				<option value="QA">QA</option>
-				<option value="devOps">DevOps</option>
-			</select>
-		</div>
+		<h1 class="heading">CV-<span>Gen</span></h1>
+		<form class="parametersSelector">
+			<div class="selectItem">
+				<select name="position" id="positionSelect" data-testId="positionSelect" class="selectItem--select">
+					<option value="" disabled>Choose your position</option>
+					<option value="frontEnd">Front-End Developer</option>
+					<option value="backEnd">Back-End Developer</option>
+					<option value="QA">QA</option>
+					<option value="devOps">DevOps</option>
+				</select>
+			</div>
+
+			<div class="selectItem">
+				<select name="level" id="levelSelect" data-testId="levelSelect" class="selectItem--select">
+					<option value="" disabled>Choose your level</option>
+					<option value="junior">Junior</option>
+					<option value="middle">Middle</option>
+					<option value="senior">Senior</option>
+					<option value="lead">Lead</option>
+				</select>
+			</div>
+		</form>
 		
-		<div class="select">
-			<label for="levelSelect">Your level</label>
-			<select name="level" id="levelSelect" data-testId="levelSelect">
-				<option value="">--Please choose your level--</option>
-				<option value="junior">Junior</option>
-				<option value="middle">Middle</option>
-				<option value="senior">Senior</option>
-				<option value="lead">Lead</option>
-			</select>
-		</div>
-		
-		<button type="button" id="generateButton" data-testId="generateButton">
+		<button type="button" id="generateButton" data-testId="generateButton" class="generateBtn">
 			Get Your Content
 		</button>
 		
-		<p id="generatedContent" data-testId="generatedContent">Nothing has been generated yet</p>
+		<section class="generatedContent">
+			<p id="generatedContentText" data-testId="generatedContent" class="generatedContent--text">Nothing has been generated yet</p>
+		</section>
 	</main>    
+	<div id="loadingIndicator"></div>
     <script src="js/script.js"></script>
 </body>
 
